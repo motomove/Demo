@@ -53,7 +53,6 @@ public class WordCount {
 
         FileInputFormat.setInputPaths(conf,new Path("hdfs://192.168.44.36:9000/user/hadoop/yinxu/yinxu1.txt"));
        FileOutputFormat.setOutputPath(conf, new Path("hdfs://192.168.44.36:9000/user/hadoop/yinxu_test/log"));
-//        FileOutputFormat.setOutputPath(conf,new Path(args[0]));
 
         JobClient.runJob(conf);
     }
